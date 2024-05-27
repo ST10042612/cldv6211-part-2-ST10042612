@@ -1,0 +1,46 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<style>
+
+    /* This Grid was created with assistance from https://www.w3schools.com/css/default.asp Grid creation section */
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .div1 {
+        grid-area: 2 / 1 / 5 / 4;
+    }
+
+    .div2 {
+        grid-area: 2 / 4 / 5 / 6;
+    }
+
+    img {
+        width: 160%;
+        height: auto;
+        float: right;
+    }
+
+</style>
+
+
+
+
+<div class="parent">
+
+    <div class="div1">
+        <h1>KhumaloKraft</h1>
+        <p>For the Artisan in all of us</p>
+    </div>
+
+    <div class="div2"> <img src="~/images/adult-1866533_1280.jpg"> </div>
+
+</div>
